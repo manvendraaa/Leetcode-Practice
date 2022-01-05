@@ -23,15 +23,11 @@ public:
     
     
     bool leafSimilar(TreeNode* root1, TreeNode* root2) {
-        if(!root1 && !root2)return true;
-        if(!root1 || !root2)return false;
-        
         vector<int> v1;
         vector<int> v2;
         inorder(root1,v1);
         inorder(root2,v2);
         
-        if(v1 == v2)return true;
-        return false;
+        return v1==v2;
     }
 };
