@@ -8,12 +8,11 @@ public:
         if(i < 0 || i>= image.size() || j<0 || j>=image[0].size() || image[i][j] != color)return;
         image[i][j] = newColor;
         
-       dfs(image,i+1,j,newColor,color);
-       dfs(image,i-1,j,newColor,color);
-       dfs(image,i,j-1,newColor,color);
-       dfs(image,i,j+1,newColor,color);
-        
-        
+        for(int c = 0 ;c < 4; c++){
+            int k = i + x[c];
+            int p = j + y[c];
+            dfs(image,k,p,newColor,color);
+        }
         
         
     }
