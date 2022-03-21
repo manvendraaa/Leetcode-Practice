@@ -110,7 +110,7 @@ int getSize(Node* node)
 {
    // Your code here
    if(node==NULL)return 0;
-   if(node->right == NULL && !node->left)return 1;
+//   if(node->right == NULL && !node->left)return 1;
    
    return getSize(node->right)+getSize(node->left) + 1;
    
