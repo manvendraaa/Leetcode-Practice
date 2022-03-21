@@ -110,7 +110,7 @@ class Solution
          if(!root->left && !root->right)return true;
          int left = sum(root->left);
          int right = sum(root->right);
-         return root->data == left + right; 
+         return root->data == left + right && isSumTree(root->right) && isSumTree(root->left); 
     }
 };
 
