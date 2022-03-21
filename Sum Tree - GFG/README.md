@@ -1,8 +1,8 @@
 # Sum Tree
-## Medium 
+##  Medium 
 <div class="problem-statement">
                 <p></p><div class="entry-content">
-<p><span style="font-size:18px">Given a Binary Tree. Return&nbsp;<strong>1</strong>&nbsp;if, for every node <strong>X</strong>&nbsp;in the tree other than the&nbsp;leaves, its value is equal to the sum of its left subtree's value and its right subtree's value. Else return <strong>0</strong>.</span></p>
+<p><span style="font-size:18px">Given a Binary Tree. Return <strong>true</strong>&nbsp;if, for every node <strong>X</strong>&nbsp;in the tree other than the&nbsp;leaves, its value is equal to the sum of its left subtree's value and its right subtree's value. Else return <strong>false</strong>.</span></p>
 
 <p><span style="font-size:18px">An empty tree is also a Sum Tree as the sum of an empty tree can be considered to be 0. A leaf node is also considered a Sum Tree.</span></p>
 
